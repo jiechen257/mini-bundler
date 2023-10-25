@@ -1,5 +1,3 @@
-# mini-bundler
-
 ## Setup
 ```shell
 pnpm i

@@ -14,7 +14,6 @@
     "@babel/parser": "^7.17.3",
     "@babel/preset-env": "^7.16.11",
     "@babel/traverse": "^7.17.3",
-    "cli-highlight": "^2.1.11",
     "prettier": "^3.0.3"
   }
 }
