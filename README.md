@@ -6,6 +6,7 @@ pnpm run build:webpack
 ```
 
 ## Sample bundle-file after packing
+### webpack
 ```js
 // /dist/webpack-bundle.demo.js
 (function (graph) {
@@ -51,6 +52,6 @@ pnpm run build:webpack
 });
 ```
 
-## TODO
-- Handwriting a Babel-like package, achieving zero dependencies.
+## Roadmap
+- Handwriting implementation of third-party package functionality with zero dependencies.
 - Supplement Rollup, Vite, and other bundling tools.
