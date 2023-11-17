@@ -1,20 +1,23 @@
 {
-  "name": "mini-bundler",
-  "version": "1.0.0",
-  "description": "",
-  "main": "bundler.js",
-  "scripts": {
-    "build:webpack": "node ./packages/webpack/index.js",
-    "build:rollup": "node ./packages/rollup/index.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@babel/core": "^7.17.5",
-    "@babel/parser": "^7.17.3",
-    "@babel/preset-env": "^7.16.11",
-    "@babel/traverse": "^7.17.3",
-    "prettier": "^3.0.3"
-  }
+	"name": "mini-bundler",
+	"version": "1.0.0",
+	"description": "",
+	"main": "bundler.js",
+	"scripts": {
+		"build": "node ./main.js",
+		"build:webpack": "node ./main.js bundler=webpack",
+		"build:rollup": "node ./main.js bundler=rollup"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@babel/core": "^7.17.5",
+		"@babel/parser": "^7.17.3",
+		"@babel/preset-env": "^7.16.11",
+		"@babel/traverse": "^7.17.3",
+		"acorn": "^8.11.2",
+		"magic-string": "^0.30.5",
+		"prettier": "^3.0.3"
+	}
 }

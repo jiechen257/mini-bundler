@@ -121,14 +121,12 @@ const formatAndWriteCode = async (inputCode, outputPath) => {
 	fs.writeFileSync(outputPath, formattedCode);
 };
 
-const main = async () => {
-	const entry = path.resolve(__dirname, '../../examples/child.js'); 
-	// const entry = "../../examples/index.js";
-	const outputPath = path.resolve(__dirname, '../../dist/webpack-bundle.js'); 
-	// const outputPath = "../../dist/webpack-bundle.js";
+const webpack = async (entry, outputPath) => {
+	// const entry = "./examples/index.js";
+	// const outputPath = "./dist/webpack-bundle.js";
 
 	const code = await generateCode(entry);
 	await formatAndWriteCode(code, outputPath);
 };
 
-main();
+module.exports = webpack;
