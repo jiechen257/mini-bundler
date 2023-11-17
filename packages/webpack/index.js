@@ -122,8 +122,10 @@ const formatAndWriteCode = async (inputCode, outputPath) => {
 };
 
 const main = async () => {
-	const entry = "./src/index.js";
-	const outputPath = "./dist/webpack-bundle.js";
+	const entry = path.resolve(__dirname, '../../examples/child.js'); 
+	// const entry = "../../examples/index.js";
+	const outputPath = path.resolve(__dirname, '../../dist/webpack-bundle.js'); 
+	// const outputPath = "../../dist/webpack-bundle.js";
 
 	const code = await generateCode(entry);
 	await formatAndWriteCode(code, outputPath);

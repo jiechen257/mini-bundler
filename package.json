@@ -4,7 +4,8 @@
   "description": "",
   "main": "bundler.js",
   "scripts": {
-    "build:webpack": "node ./webpack-bundler.js"
+    "build:webpack": "node ./packages/webpack/index.js",
+    "build:rollup": "node ./packages/rollup/index.js"
   },
   "keywords": [],
   "author": "",
