@@ -122,9 +122,6 @@ const formatAndWriteCode = async (inputCode, outputPath) => {
 };
 
 const webpack = async (entry, outputPath) => {
-	// const entry = "./examples/index.js";
-	// const outputPath = "./dist/webpack-bundle.js";
-
 	const code = await generateCode(entry);
 	await formatAndWriteCode(code, outputPath);
 };

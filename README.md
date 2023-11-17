@@ -3,9 +3,11 @@
 pnpm i
 
 pnpm run build:webpack
+# or
+pnpm run build:rollup
 ```
 
-## Sample bundle-file after packing
+## Sample bundle-file
 ### webpack
 ```js
 // /dist/webpack-bundle.demo.js
@@ -51,7 +53,3 @@ pnpm run build:webpack
   },
 });
 ```
-
-## Roadmap
-- Handwriting implementation of third-party package functionality with zero dependencies.
-- Supplement Rollup, Vite, and other bundling tools.
