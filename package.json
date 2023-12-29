@@ -5,19 +5,22 @@
 	"main": "bundler.js",
 	"scripts": {
 		"build": "node ./main.js",
-		"build:webpack": "node ./main.js bundler=webpack",
+		"build:webpack": "node ./main.js > ./dist/webpack-bundle.js",
 		"build:rollup": "node ./main.js bundler=rollup"
 	},
 	"keywords": [],
-	"author": "",
+	"author": "jiechen257",
 	"license": "ISC",
 	"devDependencies": {
+		"acorn": "^8.11.2",
+		"magic-string": "^0.30.5",
+		"prettier": "^3.0.3"
+	},
+	"dependencies": {
 		"@babel/core": "^7.17.5",
 		"@babel/parser": "^7.17.3",
 		"@babel/preset-env": "^7.16.11",
 		"@babel/traverse": "^7.17.3",
-		"acorn": "^8.11.2",
-		"magic-string": "^0.30.5",
-		"prettier": "^3.0.3"
+		"@babel/generator": "^7.23.6"
 	}
 }

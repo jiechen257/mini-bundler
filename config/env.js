@@ -6,14 +6,14 @@ const bundlerOptions = {
 		entry: entry,
 		outputPath: "./dist/webpack-bundle.js",
 		loadBundler: () => {
-			return require("../packages/webpack/index");
+			return require("../bundlers/webpack/index");
 		},
 	},
 	rollup: {
 		entry: entry,
 		outputPath: "./dist/rollup-bundle.js",
 		loadBundler: () => {
-			return require("../packages/rollup/index");
+			return require("../bundlers/rollup/index");
 		},
 	},
 };

@@ -1,5 +1,6 @@
-import { son, daughter } from "./child.js";
+const inc = require('./increment.js').increment;
+const hello = require('./hello.js')
+const a = 1;
 
-const family = `this is our family, ${son}, ${daughter}`
-
-console.log(family);
+console.log(inc(a))
+console.log(hello)
