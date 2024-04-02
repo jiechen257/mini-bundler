@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "bundler.js",
 	"scripts": {
-		"build": "node ./main.js",
+		"build": "npm run build:webpack",
 		"build:webpack": "node ./main.js > ./dist/webpack-bundle.js",
 		"build:rollup": "node ./main.js bundler=rollup"
 	},
